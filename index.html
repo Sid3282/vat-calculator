@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Untitled</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VAT Calculator - Nepal</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>VAT Calculator</h1>
+            <p>According to Nepal VAT Law (13%)</p>
+        </div>
+
+        <div class="calculator">
+            <div class="input-group">
+                <label for="amount">Enter Amount (NPR):</label>
+                <input type="number" id="amount" placeholder="Enter your amount" />
+            </div>
+
+            <div class="buttons">
+                <button class="btn" id="add-vat"><i class="fas fa-plus"></i> Add VAT</button>
+                <button class="btn" id="subtract-vat"><i class="fas fa-minus"></i> Subtract VAT</button>
+            </div>
+
+            <div class="results">
+                <p><strong>Original Amount:</strong> NPR <span id="original-amount">0.00</span></p>
+                <p><strong>VAT Amount (13%):</strong> NPR <span id="vat-amount">0.00</span></p>
+                <p><strong>Total Amount:</strong> NPR <span id="total-amount">0.00</span></p>
+            </div>
+        </div>
+
+        <!-- About VAT Modal -->
+        <div class="footer">
+            <button class="info-btn" id="vat-info-btn"><i class="fas fa-info-circle"></i> About VAT</button>
+            <button class="info-btn" id="vat-guide-btn"><i class="fas fa-book"></i> VAT Guide</button>
+        </div>
+
+        <!-- About VAT Modal -->
+        <div class="modal" id="about-vat-modal">
+            <div class="modal-content">
+                <span class="close-btn" id="close-vat-info">&times;</span>
+                <h2>About VAT (Value Added Tax)</h2>
+                <p>VAT is a tax applied to goods and services in Nepal. The standard VAT rate is 13%, which means for every product or service purchased, 13% is added to the price as tax. This is a consumption tax levied at each stage of the production and distribution chain.</p>
+                <p>In Nepal, businesses collect VAT on behalf of the government. They are required to remit the VAT collected to the government on a regular basis, typically monthly or quarterly, depending on their size and the amount of business they do.</p>
+
+                <!-- Nepali Guide -->
+                <div class="nepali-guide">
+                    <h3>VAT बारेमा (Value Added Tax)</h3>
+                    <p>नेपालमा मूल्य अभिवृद्धि कर (VAT) वस्तु र सेवामा लागु हुने कर हो। नेपालको मानक VAT दर १३% हो, जसको अर्थ हरेक वस्तु वा सेवाको मुल्यमा १३% थप गरिन्छ। यो एक उपभोक्ता कर हो, जुन उत्पादन र वितरण चक्रको प्रत्येक चरणमा लागु हुन्छ।</p>
+                    <p>नेपालमा व्यवसायहरूले सरकारको तर्फबाट VAT सङ्कलन गर्छन्। व्यवसायहरूले एक निश्चित अवधिमा VAT सङ्कलन गरेर सरकारलाई बुझाउन आवश्यक पर्छ, प्रायः महिना वा त्रैमासिक रूपमा, व्यवसायको आकार र कारोबारको आधारमा।</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- VAT Guide Modal -->
+        <div class="modal" id="vat-guide-modal">
+            <div class="modal-content">
+                <span class="close-btn" id="close-vat-guide">&times;</span>
+                <h2>VAT Calculation Guide</h2>
+                <p>To calculate VAT, follow these steps:</p>
+                <ul>
+                    <li>1. Start with the base amount or price of the product or service.</li>
+                    <li>2. Multiply the base amount by the VAT rate (13% in Nepal).</li>
+                    <li>3. The result of this multiplication is the VAT amount.</li>
+                    <li>4. To find the total amount including VAT, add the VAT amount to the base amount.</li>
+                </ul>
+                <p>For example: If you have an amount of NPR 100,000 and you need to add VAT (13%):</p>
+                <p>VAT = 100,000 × 0.13 = 13,000</p>
+                <p>Total Amount = 100,000 + 13,000 = 113,000</p>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>Created by <strong>Siddha Batala</strong></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
